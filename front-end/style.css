@@ -1,0 +1,562 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.vk{
+    display: flex;
+    align-items: flex-end;
+    
+}
+#people {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.background-wrapper
+{
+  position: fixed;
+  z-index: -10;
+} 
+.background{
+  z-index: -1;
+  background: url()  no-repeat ;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.background-img{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100vh;
+  width: 100vw;
+}
+
+.person {
+    text-align: center;
+    height: 680px;
+    width: 40%;
+    margin: 100px 0;
+    padding: 10px 0px;
+    border: 4px solid rgb(255, 255, 255);
+    background-color: #ffb991ba;
+    border-radius: 10%;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    position: relative;
+    font-size: 20px;
+    box-shadow: 0px 3px 1px #582b00,
+    15px 15px 10px rgba(0, 0, 0, 0.733),
+    0px 9px 2px rgba(0, 0, 0, 0.733),
+    10px 34px 30px rgba(0, 0, 0, 0.733);
+    transition: 0.2s;
+}
+.person:hover{
+    
+    border: 4px solid rgb(255, 213, 77);
+    background-color: rgba(255, 128, 97, 0.795);
+    border-radius: 15%;
+    box-shadow: 0px 0px 0px;
+    
+}
+
+
+
+*{
+    font-family: 'East Sea Dokdo', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    color: black;
+  
+  }
+
+.nav{
+
+    width: 100%;
+    height: 170%;
+    padding:20px;
+    margin: 100px;
+    display: flex;
+    align-items: center;
+}
+
+/* Header */
+#SITEname{
+    
+    font-size: 2em;
+    color: transparent;
+    -webkit-text-stroke: 2px rgb(230, 213, 119);
+    margin-left: 5px;
+    text-shadow: 3px 4px 0px #ff7b00,
+                 0px 4px 8px rgba(0,0,0,0.15),
+                 3px 6px 2px rgba(0,0,0,0.1),
+                 3px 34px 30px rgba(0,0,0,0.1);
+    
+    
+    
+
+}   
+
+#header-snow{
+    z-index:-2;
+}
+.snow{
+    position: absolute;
+    opacity: 5;
+    filter:blur(0.2px);
+    width: 50px;
+    height: 50px;
+}
+
+#photo1{
+    position: absolute;
+    opacity: 5;
+    filter:blur(1px);
+    z-index: 11;
+}
+#photo5{
+    position: absolute;
+    opacity: 5;
+    filter:blur(0.5px);
+    z-index: 11;
+}
+#photo8{
+    position: absolute;
+    opacity: 5;
+    filter:blur(0.7px);
+    z-index: 11;
+}
+#photo11{
+    position: absolute;
+    opacity: 5;
+    filter:blur(0.9px);
+    z-index: 11;
+}
+#photo12{
+    position: absolute;
+    opacity: 5;
+    filter:blur(1px);
+    z-index: 11;
+}
+#photo7{
+    filter:blur(0px);
+    z-index: 11;
+}
+
+
+
+.snow:nth-child(1){
+    left:90%;
+    animation: anim 15s linear infinite;
+}
+.snow:nth-child(2){
+    left:80%;
+    animation: anim 24s linear infinite;
+}
+.snow:nth-child(3){
+    left:70%;
+    animation: anim 25s linear infinite;
+}
+.snow:nth-child(4){
+    left:10%;
+    animation: anim 19s linear infinite;
+}
+.snow:nth-child(5){
+    left:85%;
+    animation: anim 14s linear infinite;
+}
+.snow:nth-child(6){
+    left:55%;
+    animation: anim 22s linear infinite;
+}
+.snow:nth-child(7){
+    left:15%;
+    animation: anim 21s linear infinite;
+}
+.snow:nth-child(8){
+    left:30%;
+    animation: anim 24s linear infinite;
+}
+.snow:nth-child(9){
+    left:85%;
+    animation: anim 17s linear infinite;
+}
+.snow:nth-child(10){
+    left:2%;
+    animation: anim 20s linear infinite;
+}
+.snow:nth-child(11){
+    left:35%;
+    animation: anim 30s linear infinite;
+}
+.snow:nth-child(12){
+    left:60%;
+    animation: anim 17s linear infinite;
+}
+.snow:nth-child(13){
+    left:59%;
+    animation: anim 35s linear infinite;
+}
+.snow:nth-child(14){
+    left:32%;
+    animation: anim 36s linear infinite;
+}
+.snow:nth-child(15){
+    left:40%;
+    animation: anim 27s linear infinite;
+}
+.snow:nth-child(16){
+    left:45%;
+    animation: anim 28s linear infinite;
+}
+.snow:nth-child(17){
+    left:50%;
+    animation: anim 39s linear infinite;
+}
+.snow:nth-child(18){
+    left:40%;
+    animation: anim 30s linear infinite;
+}
+.snow:nth-child(19){
+    left:26%;
+    animation: anim 31s linear infinite;
+}
+.snow:nth-child(20){
+    left:20%;
+    animation: anim 45s linear infinite;
+}
+.snow:nth-child(21){
+    left:10%;
+    animation: anim 49s linear infinite;
+}
+.snow:nth-child(22){
+    left:6%;
+    animation: anim 50s linear infinite;
+}
+.snow:nth-child(23){
+    left:37%;
+    animation: anim 50s linear infinite;
+}
+.snow:nth-child(24){
+    left:61%;
+    animation: anim 35s linear infinite;
+}
+@keyframes anim{
+    0%{top:10%; transform:translateX(15px)
+    rotate(36deg);}
+    20%{transform:translateX(-15px)
+    rotate(45deg);}
+    40%{transform:translateX(-15px)
+    rotate(90deg);}
+    60%{transform:translateX(15px)
+    rotate(180deg);}
+    80%{transform:translateX(-15px)
+    rotate(180deg);}
+    100%{top:100%; transform:translateX(-15px)
+    rotate(225deg);}
+}
+
+.photo-img{
+    border: 7px groove rgb(255, 193, 77);
+    box-shadow: 0px 3px 0px #ff7b008e,
+    15px 15px 15px rgba(0, 0, 0, 0.383),
+    0px 6px 2px rgba(0,0,0,0.1),
+    0px 34px 30px rgba(0,0,0,0.1);
+}
+
+.nsi{
+    font-size: 35px;
+}
+
+
+.probel{
+    transition: 0.08s;
+    font-weight: 1.4em;
+    border-bottom:  0px solid transparent;
+    text-shadow: 3px 2px 3px #ff7b00,
+                 5px 6px 2px rgba(0,0,0,0.15),
+                 5px 10px 5px rgba(0,0,0,0.1),
+                 10px 5px 5px rgba(0, 0, 0, 0.719);
+}
+
+.probel:hover{
+    height: 41px;
+    padding-bottom: 0px;
+    border-bottom:  3px solid rgb(252, 255, 77) ;
+    border-radius: 15%;
+    
+}
+
+
+a{
+    margin: 150px;
+    padding: 0;
+    text-decoration: none;
+    font-size: 30px;
+    color:#ecff83d0;
+}
+
+
+
+.header123{
+      padding: 90px;
+}
+
+
+
+
+.span{
+    height: 100%;
+    
+    display: flex;
+    align-items: center;
+}
+
+/*hr{
+    padding: 0%;
+    border: solid;
+    border-radius: 30%; 
+    width: 51%;
+    background-color: rgba(255, 196, 0, 0.678);
+    color: rgba(255, 102, 0, 0.678);
+    height: 3px;
+   
+}*/
+
+.head{
+
+    background-color: rgba(161, 43, 14, 0.705);
+    height: 10%;
+    width: 100%;
+    position: fixed;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0% 0% 30% 30% ;
+    z-index: 10;
+    border: 10px solid rgb(255, 213, 77); 
+    box-shadow:3px 1px 0px #ff7b00,
+    0px 4px 8px rgba(0,0,0,0.15),
+    3px 6px 2px rgba(0,0,0,0.1),
+    3px 34px 30px rgba(0,0,0,0.1);
+    transition: 0.2s;
+}  
+
+.fake-head{
+    width: 100%;
+    border-style: 10px solid rgb(255, 213, 77);
+}
+.head:hover{
+    background-color: rgba(161, 43, 14, 0.863);
+    height: 11%;
+}
+
+
+/* Register field */
+
+
+
+.block {
+    padding: 20%;
+    height: 100%;
+    width: 60%;
+    margin: 0 auto;
+    font-style: 100%;
+    
+}
+
+#form {
+    text-align: center;
+    border: 4px solid rgb(255, 255, 255);
+    background-color: #ffb991ba;
+    padding: 15px;
+    border-radius: 20%;
+    margin-top: 5px;
+    position: relative;
+    box-shadow: 0px 3px 1px #582b00,
+    15px 15px 10px rgba(0, 0, 0, 0.733),
+    0px 9px 2px rgba(0, 0, 0, 0.733),
+    10px 34px 30px rgba(0, 0, 0, 0.733);
+}
+
+
+
+::placeholder{
+    color: rgb(77, 77, 77);
+}
+
+
+label {
+    display: inline-block;
+    margin: 15px 25px;
+    font-size: 16px;
+    font-weight: 900;
+    position: relative;
+    width: 250px;
+}
+
+
+
+.menu {
+    height: 40px;
+    width:450px;
+    background-color: rgba(255, 238, 0, 0.322);
+    border: none;
+}
+
+
+
+.menu:invalid+span:after {
+    content: '\2718';
+    color:rgb(255, 0, 0);
+    margin-left: 15px;
+}
+
+
+
+.menu:valid+span:after {
+    content: '\2714';
+    color: green;
+    margin-left: 15px;
+}
+
+
+
+.button {
+    width: 100%;
+    text-align: center;
+    border-radius: 15px;
+    padding: 5px 0;
+}
+
+
+
+.qwe {
+    font-family: 'East Sea Dokdo', cursive;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    display: inline-block;
+    color: none;
+    padding: 15px 40px;
+    margin: 20px 10px;
+    border-radius: 100px;
+    border-style: none;
+    outline:none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, #ffb991 0%, #e6b927 100%, #ffb991 100%);
+    background-size: 400% 250%;
+    box-shadow: 0 0 60px #f5b040;
+    transition: .5s;
+    font-size: 20px;
+}
+.qwe:hover{
+    background-position: right center;
+    box-shadow: none;
+    color: white;
+}
+
+
+
+#button {
+    display: none;
+}
+
+
+
+
+#form label:nth-of-type(3n) {
+    margin-bottom: 30px;
+}
+
+
+
+.gradient-button {
+    font-family: 'East Sea Dokdo', cursive;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    display: inline-block;
+    color: none;
+    padding: 15px 40px;
+    margin: 20px 10px;
+    border-radius: 100px;
+    border-style: none;
+    outline:none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, rgba(174, 194, 0, 0.753) -20%, rgb(245, 100, 64) );
+    background-size: 400% 250%;
+    box-shadow: 0 0 70px rgba(188, 209, 0, 0.884);
+    transition: .5s;
+    font-size: 20px;
+}
+.gradient-button:hover{
+    background-position: right center;
+    box-shadow: none;
+    color: white;
+}
+
+.main_block{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+#card-back {
+    text-align: center;
+    border: 4px solid rgb(255, 255, 255);
+    background-color: #ffb991ba;
+    border-radius: 10%;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    position: relative;
+    font-size: 20px;
+    box-shadow: 0px 3px 1px #582b00,
+    15px 15px 10px rgba(0, 0, 0, 0.733),
+    0px 9px 2px rgba(0, 0, 0, 0.733),
+    10px 34px 30px rgba(0, 0, 0, 0.733);
+    transition: 0.2s;
+    padding: 10px;
+    height: 50%;
+    width: 30%;
+    margin: 0 auto;
+}
+#card-back:hover{
+    
+    border: 4px solid rgb(255, 213, 77);
+    background-color: rgba(255, 128, 97, 0.795);
+    border-radius: 15%;
+    box-shadow: 0px 0px 0px;
+    
+}
+.button3{
+    font-family: 'East Sea Dokdo', cursive;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    display: inline-block;
+    color: none;
+    padding: 15px 40px;
+    margin: 20px 10px;
+    border-radius: 100px;
+    border-style: none;
+    outline:none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, rgba(174, 194, 0, 0.753) -20%, rgb(245, 100, 64));
+    background-size: 400% 250%;
+    box-shadow: 0 0 70px rgba(188, 209, 0, 0.884);
+    transition: .5s;
+    font-size: 20px;
+}
+.butto3:hover{
+    background-position: right center;
+    box-shadow: none;
+    color: white;
+}

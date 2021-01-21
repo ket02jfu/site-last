@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>WorkDay3</title>
+</head>
+
+<body>
+
+    <header id = "header-snow">
+        <section>
+            <div class = "snow" ><img id = "photo1" width = "75px" height = "75px" src = "https://www.flaticon.com/svg/vstatic/svg/931/931960.svg?token=exp=1611051573~hmac=ce3d836cd5bf09b07bea321196357ba7"></div>
+            <div class = "snow" ><img id = "photo2" width = "75px" height = "75px" src = "https://www.flaticon.com/svg/vstatic/svg/931/931960.svg?token=exp=1611051573~hmac=ce3d836cd5bf09b07bea321196357ba7"></div>
+            <div class = "snow" ><img id = "photo3" width = "75px" height = "75px" src = "https://www.flaticon.com/svg/vstatic/svg/2674/2674074.svg?token=exp=1611051585~hmac=af86819a68b2af5afb98e3bfdeb94243"></div>
+            <div class = "snow" ><img id = "photo4" width = "75px" height = "75px" src = "https://www.flaticon.com/svg/vstatic/svg/877/877956.svg?token=exp=1611051594~hmac=2ba672913b9dead71704f3906b155021"></div>
+            <div class = "snow" ><img id = "photo5" width = "75px" height = "75px" src = "https://www.flaticon.com/svg/vstatic/svg/857/857261.svg?token=exp=1611051632~hmac=cd13a0cdcae30a302a682981b64deb7a"></div>
+            <div class = "snow" ><img id = "photo6" width = "75px" height = "75px" src = "https://www.flaticon.com/svg/vstatic/svg/3075/3075596.svg?token=exp=1611051635~hmac=dc3c0eb50375c544a2f1b75b71ab5a28"></div>
+            <div class = "snow" ><img id = "photo7" width = "75px" height = "75px" src = "https://www.flaticon.com/svg/vstatic/svg/3040/3040019.svg?token=exp=1611051644~hmac=4d648d0972e8fbcc8e7ed75212853d43"></div>
+            <div class = "snow" ><img id = "photo8" width = "75px" height = "75px" src = "https://www.flaticon.com/svg/vstatic/svg/3040/3040019.svg?token=exp=1611051644~hmac=4d648d0972e8fbcc8e7ed75212853d43"></div>
+            <div class = "snow" ><img id = "photo9" width = "75px" height = "75px" src = "https://www.flaticon.com/svg/vstatic/svg/1582/1582199.svg?token=exp=1611051674~hmac=5298640525139d75588906559dc2cbde"></div>
+            <div class = "snow" ><img id = "photo10" width = "75px" height = "75px" src = "https://www.flaticon.com/svg/vstatic/svg/1582/1582165.svg?token=exp=1611051682~hmac=ca48ee27824567f2bd06261b51f03940"></div>
+            <div class = "snow" ><img id = "photo11" width = "75px" height = "75px" src = "https://www.flaticon.com/svg/vstatic/svg/1582/1582189.svg?token=exp=1611051698~hmac=ec81c5bc8ff872ac08a8a730d424920c"></div>
+            <div class = "snow" ><img id = "photo12" width = "75px" height = "75px" src = "https://www.flaticon.com/svg/vstatic/svg/1582/1582138.svg?token=exp=1611051707~hmac=bd5d4401d260285b97b27aecca22a7e2"></div>
+            <div class = "snow" ><img id = "photo1" width = "75px" height = "75px" src = "https://www.flaticon.com/svg/vstatic/svg/931/931960.svg?token=exp=1611051573~hmac=ce3d836cd5bf09b07bea321196357ba7"></div>
+            <div class = "snow" ><img id = "photo2" width = "75px" height = "75px" src = "https://www.flaticon.com/svg/vstatic/svg/931/931960.svg?token=exp=1611051573~hmac=ce3d836cd5bf09b07bea321196357ba7"></div>
+            <div class = "snow" ><img id = "photo3" width = "75px" height = "75px" src = "https://www.flaticon.com/svg/vstatic/svg/2674/2674074.svg?token=exp=1611051585~hmac=af86819a68b2af5afb98e3bfdeb94243"></div>
+            <div class = "snow" ><img id = "photo4" width = "75px" height = "75px" src = "https://www.flaticon.com/svg/vstatic/svg/877/877956.svg?token=exp=1611051594~hmac=2ba672913b9dead71704f3906b155021"></div>
+            <div class = "snow" ><img id = "photo5" width = "75px" height = "75px" src = "https://www.flaticon.com/svg/vstatic/svg/857/857261.svg?token=exp=1611051632~hmac=cd13a0cdcae30a302a682981b64deb7a"></div>
+            <div class = "snow" ><img id = "photo6" width = "75px" height = "75px" src = "https://www.flaticon.com/svg/vstatic/svg/3075/3075596.svg?token=exp=1611051635~hmac=dc3c0eb50375c544a2f1b75b71ab5a28"></div>
+            <div class = "snow" ><img id = "photo7" width = "75px" height = "75px" src = "https://www.flaticon.com/svg/vstatic/svg/3040/3040019.svg?token=exp=1611051644~hmac=4d648d0972e8fbcc8e7ed75212853d43"></div>
+            <div class = "snow" ><img id = "photo8" width = "75px" height = "75px" src = "https://www.flaticon.com/svg/vstatic/svg/3040/3040019.svg?token=exp=1611051644~hmac=4d648d0972e8fbcc8e7ed75212853d43"></div>
+            <div class = "snow" ><img id = "photo9" width = "75px" height = "75px" src = "https://www.flaticon.com/svg/vstatic/svg/1582/1582199.svg?token=exp=1611051674~hmac=5298640525139d75588906559dc2cbde"></div>
+            <div class = "snow" ><img id = "photo10" width = "75px" height = "75px" src = "https://www.flaticon.com/svg/vstatic/svg/1582/1582165.svg?token=exp=1611051682~hmac=ca48ee27824567f2bd06261b51f03940"></div>
+            <div class = "snow" ><img id = "photo11" width = "75px" height = "75px" src = "https://www.flaticon.com/svg/vstatic/svg/1582/1582189.svg?token=exp=1611051698~hmac=ec81c5bc8ff872ac08a8a730d424920c"></div>
+            <div class = "snow" ><img id = "photo12" width = "75px" height = "75px" src = "https://www.flaticon.com/svg/vstatic/svg/1582/1582138.svg?token=exp=1611051707~hmac=bd5d4401d260285b97b27aecca22a7e2"></div>
+        
+
+        
+        </section>
+   
+
+
+
+
+
+
+    <div class = "head">
+
+      
+        <div class = "nav">
+            <div class="span">
+                <img width="70px" height="70px" src="https://www.flaticon.com/svg/vstatic/svg/3104/3104915.svg?token=exp=1611134595~hmac=bb91af7d49ff4027a28bb18ff5a14523" alt="">
+                <p id= "SITEname">SITE </p>
+           </div>
+            <a href="index.html" class = "probel"> Главная</a>
+            <a href="register.html" class = "probel">Регистрация</a>
+            <a href="redit.html" class = "probel">Редактирование</a>
+            
+        </div> 
+
+    </div>
+
+    <div class = "fake-head"></div>
+
+    <div class="background-wrapper">
+        <div class="background">
+            <!--<img src="https://porting-team.ru/wp-content/cache/thumb/54/0c3f9f5c6598654_1280x0.jpg" alt="" class="background-img">-->
+            <video src="./img/planet.mp4" muted autoplay loop></video>
+        </div>
+    </div>
+
+
+    <div class="header123"> </div>
+    <div id="people">
+        <div class="person" v-for="(result,index) in results">
+            <img :src="result.avatar" v-bind:alt="results" class = "photo-img" width="300px" height="300px">
+            
+            <p class = "nsi"> Фамилия: {{ result.last_name }} </p>
+            <p class = "nsi"> Имя: {{ result.first_name }}</p> 
+            <!-- <p class = "nsi"> Your ID: {{ result.number }} </p> -->
+            
+            <div class = "button2"><input v-on:click="del(index)"  type="button" value="Удалить повара" class="gradient-button"></div>
+            
+            
+        </div>
+        
+    </div>
+
+
+ </header>
+    <script src="work3.js"></script>
+    <script>
+        let myButton = document.getElementById('button');
+        myButton.addEventListener('click', function(ev) {
+            let number = document.forms['form'].elements['number'].value;
+            let first_name = document.forms['form'].elements['name'].value;
+            let last_name = document.forms['form'].elements['surname'].value;
+            let img_url = document.forms['form'].elements['image'].value;
+            // let pass = document.forms['form'].elements['password'].value;
+
+            let obj = {
+                number: number,
+                first_name: first_name,
+                last_name: last_name,
+                avatar: img_url
+            };
+
+            if (obj.number != "" && obj.first_name != "" && obj.last_name != "" && obj.avatar != "") {
+                fetch('http://localhost:3000/users', {
+                        method: 'POST',
+                        body: JSON.stringify(obj),
+                        headers: {
+                            'content-type': 'application/json'
+                        }
+                    })
+                    .then(function(response) {
+                        return response.json();
+                    })
+                    .catch(alert);
+                    alert("Player has been added")
+            }
+        })
+    </script>
+
+</body>
+
+</html>
